@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ name }}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-success mb-4">
+  <a class="navbar-brand" href="/">RSS<b>2</b>DB</a>
+</nav>
+<div class="container">
+  <h1>{{ message }}</h1>
+  <h2>{{ error.status }}</h2>
+  <pre>{{ error.stack }}</pre>
+</div>
+</body>
+</html>

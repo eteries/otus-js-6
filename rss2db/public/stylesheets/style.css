@@ -1,0 +1,16 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.navbar-brand b {
+  background: darkorange;
+  display: inline-block;
+  padding: 0 3px 2px;
+  margin: 2px;
+  line-height: 1;
+  border-radius: 3px;
+}
