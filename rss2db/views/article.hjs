@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ site }} : {{ title }}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-success mb-4">
+  <a class="navbar-brand" href="/">RSS<b>2</b>DB</a>
+</nav>
+<div class="container">
+  <h1>{{ title }}</h1>
+  <section>
+      {{{ text }}}
+  </section>
+</div>
+</body>
+</html>

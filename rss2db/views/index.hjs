@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ name }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+  </head>
+  <body>
+  <nav class="navbar navbar-dark bg-success mb-4">
+    <a class="navbar-brand" href="/">RSS<b>2</b>DB</a>
+  </nav>
+  <div class="container">
+    <form class="form-inline" action="add" method="post">
+      <div class="form-check mb-2 mr-sm-2">
+        <label class="form-check-label" for="url">
+          Add your favorite RSS feed
+        </label>
+      </div>
+      <label class="sr-only" for="url">URL</label>
+      <input type="text" class="form-control mb-2 mr-sm-2" id="url" name = "url" placeholder="http://site/feed/name.rss" title="feed url, like, https://www.sports.ru/rss/all_news.xml">
+      <button type="submit" class="btn btn-primary mb-2 bg-success">Add</button>
+    </form>
+    <h2>Your news</h2>
+    {{^posts}}
+      <p>No news are good news, but let's add a new feed.</p>
+    {{/posts}}
+    <dl>
+      {{#posts}}
+        <dt>{{ title }}</dt>
+        <dd><a href="article/{{ _id }}" class="text-success">{{ snippet }}</a></dd>
+      {{/posts}}
+    </dl>
+  </div>
+  </body>
+</html>
